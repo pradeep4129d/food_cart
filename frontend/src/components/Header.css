@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #747474;
+    overflow: hidden;
+    position: relative;
+}
+.Header{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    height: 60px;
+    z-index: 10;
+}
+@keyframes intro {
+    0%{
+        top: 300px;
+        left:660px;
+        transform:scale(0);
+    }
+    30%,60%{
+        top: 300px;
+        left:660px;
+        transform:scale(1.6);
+    }
+    100%{
+        top: -10px;
+        left: 10px;
+    }
+}
+@keyframes blur {
+    0%{
+        z-index: 15;
+        background: white;
+    }
+    20%{
+        z-index: 15;
+        background: white;
+    }
+    70%{
+        z-index: 15;
+        backdrop-filter: blur(70px);
+    }
+    80%{
+        z-index: 15;
+        backdrop-filter: blur(60px);
+    }
+    90%{
+        z-index: 15;
+        backdrop-filter: blur(20px);
+    }
+    98%{
+        z-index: 15;
+        backdrop-filter: blur(8px);
+    }
+}
+.container{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    z-index: 0;
+    animation: blur 2.3s;
+}
+.logo{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    animation: intro 3s ease;
+    z-index: 99999999;
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 10px;
+}
+@keyframes move {
+    0%{
+        left: 110px;
+    }
+    50%{
+        left: 100px;
+    }
+    100%{
+        left: 110px;
+    }
+}
+.logo>ion-icon{
+    font-size: 40px;
+    position: absolute;
+    left: 100px;
+    top:20px;
+    color: red;
+    animation: move 3s ease-in-out 2s infinite;
+}
+@keyframes slide {
+    0%,50%{
+        margin-left: 100px; 
+    }
+}
+a{
+    text-decoration: none;
+    margin-right: 70px;
+    color: black;
+    font-size: 18px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 35px;
+    background: transparent;
+    position: relative;
+    z-index: 11;
+}
+a:hover{
+    color: red;
+}
+.nav{
+    margin-left: 200px;
+    animation: slide 4s ease ;
+}
+@keyframes roll {
+    0%{
+        width: 0px;
+        border: transparent;
+    }
+    100%{
+        width: 300px;
+    }
+}
+#search{
+    margin-left: 270px;
+    width:300px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    animation: roll 4s ease 1s;
+    z-index: 11;
+}
+#search:focus{
+    outline: none;
+}
+body{
+    position: relative;
+}
+.con{
+    background: white;
+    width: 69px;
+    height: 80px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow:  10px 10px 40px #666666;
+    position: absolute;
+    left: 801px;
+    top: 12px;
+    z-index: 0;
+    transition-property: left;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+.con.click1{
+    left: 801px;
+    width: 69px;
+}
+.con.click2{
+    left: 941px;
+    width: 111px;
+}
+.con.click3{
+    left: 1123px;
+    width: 55px;
+}
+.con.click4{
+    left:1249px ;
+    width: 115px;
+}
+.con.click5{
+    left:1380px ;
+    width:69px ;
+}
+.homepage,.cartpage,.categorypage,.yorderpage,.profile{
+    position: relative;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 88.5vh;
+    padding:10px 10px 15px 15px;
+    z-index: 8;
+
+}
+.login{
+    position: absolute;
+    left: 1380px;
+}
+.prof{
+    position: absolute;
+    left: 1380px;
+}
+.login:hover{
+    padding:5px 10px 8px 10px;
+    box-shadow: 10px 10px 30px #666666;
+    background: red;
+    color: white;
+}
+.slider>img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 10px 10px 30px black;
+}
+.slider{
+    width: 1000px;
+    height: 400px;
+}
+
+@keyframes m {
+    0%{
+        scale: 0.9;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+@keyframes l1 {
+    0%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 0.9;
+    }
+}
+@keyframes l2 {
+    0%{
+        scale: 0.9;
+    }
+    100%{
+        scale: 0.7;
+    }
+}
+@keyframes r1 {
+    0%{
+        scale: 0.7;
+    }
+    100%{
+        scale: 0.9;
+    }
+}
+.l2{
+    z-index: 1;
+    transition-property: left;
+    transition-duration: .5s;
+    animation: l2 1s ease;
+    scale: 0.7;
+}
+.l1{
+    z-index: 2;
+    transition-property: left;
+    transition-duration: 1s;
+    animation: l1 1s ease;
+    scale: 0.9;
+}
+.m{
+    z-index: 5;
+    transition-property: left;
+    transition-duration: 1s;
+    animation: m 1s ease;
+    scale:1.1;
+}
+.r1{
+
+    z-index:2;
+    transition-property: left;
+    transition-duration: 1s;
+    animation: r1 1s ease;
+    scale: 0.9;
+}
+.r2{
+    z-index: 1;
+    scale: 0.7;
+}
+.recent{
+    font-weight: 600;
+    font-size: 20px;
+}
